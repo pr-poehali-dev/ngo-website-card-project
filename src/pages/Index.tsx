@@ -118,7 +118,7 @@ const Index = () => {
           <div className="max-w-3xl animate-fade-in">
             <div className="gold-line mb-8" />
             <p className="text-gold uppercase tracking-[0.3em] text-sm mb-6">
-              нспка.рф · Единственная профессиональная организация в России
+              Единственная профессиональная организация в России
             </p>
             <h1 className="font-serif text-white text-5xl md:text-7xl leading-[1.05] mb-8">
               Национальный союз профессионалов индустрии кемпингов и автотуризма
@@ -294,9 +294,9 @@ const Index = () => {
 
             <div className="space-y-7">
               {[
-                { icon: 'Globe', label: 'Официальный сайт', value: 'нспка.рф' },
+                { icon: 'Globe', label: 'Официальный сайт', value: 'in-caravaning.com' },
                 { icon: 'MapPin', label: 'Адрес', value: 'г. Москва' },
-                { icon: 'Mail', label: 'Электронная почта', value: 'info@нспка.рф' },
+                { icon: 'Mail', label: 'Электронная почта', value: 'mdanilova@in-caravaning.com' },
                 { icon: 'Clock', label: 'Часы работы', value: 'Пн–Пт, 09:00 – 18:00' },
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-5">
