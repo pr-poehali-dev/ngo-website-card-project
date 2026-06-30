@@ -32,7 +32,11 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
+
+    --navy: 218 54% 16%;
+    --navy-light: 217 40% 27%;
+    --gold: 41 56% 52%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -96,6 +100,12 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  .gold-line {
+    @apply h-px w-16 bg-gold;
   }
 }
