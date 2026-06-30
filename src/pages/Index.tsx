@@ -71,7 +71,7 @@ const Index = () => {
             </div>
             <div className="leading-tight max-w-[260px]">
               <p className="font-serif text-lg tracking-wide leading-tight">Национальный союз профессионалов</p>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-white/50">индустрии кемпингов и автотуризма</p>
+              <p className="text-[11px] uppercase tracking-[0.2em] text-white/50">индустрии кемпингов, кэмпинга и каравана</p>
             </div>
           </button>
 
@@ -311,7 +311,7 @@ const Index = () => {
             <div className="mt-10 pt-8 border-t border-white/10">
               <p className="text-xs uppercase tracking-wider text-white/50 mb-2">Реквизиты</p>
               <p className="text-white/70 text-sm leading-relaxed">
-                ИНН 7701234567 · ОГРН 1097799001234 · КПП 770101001
+                ИНН 9703128882
               </p>
             </div>
           </div>
