@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
 const HERO_IMG =
-  'https://cdn.poehali.dev/projects/a6bdbe54-3b49-440a-9eb8-6c343a67f304/files/b9380b91-8169-4cc8-a8bd-897e7564d00d.jpg';
+  'https://cdn.poehali.dev/projects/a6bdbe54-3b49-440a-9eb8-6c343a67f304/files/32afbdc3-d26d-447b-ac97-f045b0a0ab7b.jpg';
 
 const NAV = [
   { id: 'home', label: 'Главная' },
@@ -16,40 +16,40 @@ const NAV = [
 ];
 
 const DOCUMENTS = [
-  { title: 'Устав организации', desc: 'Редакция от 12 января 2024 г.', size: 'PDF · 1,4 МБ' },
+  { title: 'Устав Союза', desc: 'Редакция от 12 января 2024 г.', size: 'PDF · 1,4 МБ' },
   { title: 'Свидетельство о регистрации', desc: 'Минюст России', size: 'PDF · 820 КБ' },
   { title: 'Годовой отчёт за 2024 год', desc: 'Финансовая и содержательная отчётность', size: 'PDF · 3,1 МБ' },
+  { title: 'Стандарты классификации кемпингов', desc: 'Требования к объектам размещения', size: 'PDF · 2,2 МБ' },
+  { title: 'Положение о членстве в Союзе', desc: 'Порядок вступления и взносов', size: 'PDF · 690 КБ' },
   { title: 'Политика обработки данных', desc: 'В соответствии с 152-ФЗ', size: 'PDF · 540 КБ' },
-  { title: 'Положение о членстве', desc: 'Порядок вступления и взносов', size: 'PDF · 690 КБ' },
-  { title: 'Бухгалтерский баланс', desc: 'Отчётный период 2024 г.', size: 'PDF · 1,1 МБ' },
 ];
 
 const NEWS = [
   {
     date: '24 июня 2026',
-    tag: 'Отчётность',
-    title: 'Опубликован публичный годовой отчёт за 2024 год',
-    text: 'Документ включает финансовую отчётность, результаты реализованных программ и планы на следующий период.',
+    tag: 'Стандарты',
+    title: 'Утверждены отраслевые стандарты классификации кемпингов и автокемпингов',
+    text: 'Документ устанавливает единые требования к инфраструктуре, безопасности и сервису объектов размещения автотуристов.',
   },
   {
     date: '11 июня 2026',
     tag: 'Мероприятия',
-    title: 'Итоги ежегодного собрания учредителей фонда',
-    text: 'Утверждены приоритетные направления деятельности и состав попечительского совета на 2026–2027 годы.',
+    title: 'Итоги ежегодного съезда профессионалов индустрии автотуризма',
+    text: 'Участники обсудили развитие сети кемпингов вдоль федеральных трасс и меры государственной поддержки отрасли.',
   },
   {
     date: '02 июня 2026',
-    tag: 'Программы',
-    title: 'Запущена новая программа адресной поддержки',
-    text: 'Приём заявок открыт. Подробные условия участия размещены в разделе публичной документации.',
+    tag: 'Развитие',
+    title: 'Открыт приём заявок в реестр сертифицированных кемпингов',
+    text: 'Операторы автокемпингов могут пройти добровольную сертификацию и войти в национальный реестр объектов.',
   },
 ];
 
 const VALUES = [
-  { icon: 'Scale', title: 'Прозрачность', text: 'Вся отчётность публикуется в открытом доступе и доступна каждому.' },
-  { icon: 'ShieldCheck', title: 'Ответственность', text: 'Мы действуем строго в рамках устава и законодательства РФ.' },
-  { icon: 'Users', title: 'Партнёрство', text: 'Объединяем усилия граждан, бизнеса и государственных институтов.' },
-  { icon: 'Target', title: 'Результат', text: 'Каждая программа имеет измеримые цели и публичные итоги.' },
+  { icon: 'Map', title: 'Развитие отрасли', text: 'Формируем единую инфраструктуру кемпингов и автотуризма по всей стране.' },
+  { icon: 'ShieldCheck', title: 'Стандарты качества', text: 'Разрабатываем и внедряем отраслевые стандарты безопасности и сервиса.' },
+  { icon: 'Users', title: 'Объединение профессионалов', text: 'Объединяем операторов кемпингов, производителей и автотуристов.' },
+  { icon: 'Landmark', title: 'Диалог с государством', text: 'Представляем интересы индустрии в органах власти и ведомствах.' },
 ];
 
 const Index = () => {
@@ -67,11 +67,11 @@ const Index = () => {
         <div className="container flex items-center justify-between h-20">
           <button onClick={() => scrollTo('home')} className="flex items-center gap-3 text-left">
             <div className="flex items-center justify-center w-11 h-11 border border-gold/60">
-              <span className="font-serif text-2xl text-gold leading-none">О</span>
+              <Icon name="Tent" size={22} className="text-gold" />
             </div>
-            <div className="leading-tight">
-              <p className="font-serif text-xl tracking-wide">Фонд «Опора»</p>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-white/50">Некоммерческая организация</p>
+            <div className="leading-tight max-w-[260px]">
+              <p className="font-serif text-lg tracking-wide leading-tight">Национальный союз профессионалов</p>
+              <p className="text-[11px] uppercase tracking-[0.2em] text-white/50">индустрии кемпингов и автотуризма</p>
             </div>
           </button>
 
@@ -117,15 +117,15 @@ const Index = () => {
           <div className="max-w-3xl animate-fade-in">
             <div className="gold-line mb-8" />
             <p className="text-gold uppercase tracking-[0.3em] text-sm mb-6">
-              Действуем с 2009 года
+              Развиваем автотуризм в России
             </p>
             <h1 className="font-serif text-white text-5xl md:text-7xl leading-[1.05] mb-8">
-              Объединяем усилия ради общественного блага
+              Объединяем индустрию кемпингов и автотуризма
             </h1>
             <p className="text-white/70 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
-              Некоммерческая организация, работающая открыто и в полном соответствии
-              с законодательством Российской Федерации. Вся документация и отчётность
-              доступны публично.
+              Некоммерческая организация, объединяющая профессионалов отрасли:
+              операторов кемпингов, производителей и путешественников. Формируем стандарты
+              и развиваем инфраструктуру автотуризма по всей стране.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -150,10 +150,10 @@ const Index = () => {
       <section className="bg-navy-light text-white">
         <div className="container grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
           {[
-            { n: '17', l: 'лет работы' },
-            { n: '240+', l: 'реализованных проектов' },
-            { n: '15 000', l: 'благополучателей' },
-            { n: '100%', l: 'открытой отчётности' },
+            { n: '12', l: 'лет работы' },
+            { n: '350+', l: 'кемпингов в реестре' },
+            { n: '60', l: 'регионов присутствия' },
+            { n: '500+', l: 'членов союза' },
           ].map((s) => (
             <div key={s.l} className="py-10 px-4 text-center">
               <p className="font-serif text-4xl md:text-5xl text-gold mb-2">{s.n}</p>
@@ -170,18 +170,19 @@ const Index = () => {
             <div className="gold-line mb-6" />
             <p className="text-gold uppercase tracking-[0.3em] text-sm mb-4">О нас</p>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-8">
-              Миссия, основанная на доверии и открытости
+              Объединяем индустрию ради развития автотуризма
             </h2>
             <div className="space-y-5 text-navy/70 text-lg leading-relaxed">
               <p>
-                Фонд «Опора» — это независимая некоммерческая организация, созданная для
-                реализации социально значимых программ. Мы убеждены, что устойчивые
-                изменения возможны только при условии прозрачности и подотчётности.
+                Национальный союз профессионалов индустрии кемпингов и автотуризма —
+                это отраслевое объединение, созданное для развития цивилизованного
+                автотуризма в России. Мы разрабатываем стандарты, поддерживаем операторов
+                и представляем интересы отрасли.
               </p>
               <p>
-                Наша деятельность регулируется уставом, утверждённым учредителями, и
-                находится под контролем попечительского совета. Финансовая и содержательная
-                отчётность публикуется ежегодно.
+                Деятельность Союза регулируется уставом, утверждённым учредителями.
+                Мы ведём национальный реестр кемпингов, проводим добровольную сертификацию
+                объектов и публикуем отчётность ежегодно.
               </p>
             </div>
           </div>
@@ -292,7 +293,7 @@ const Index = () => {
               {[
                 { icon: 'MapPin', label: 'Адрес', value: '125009, г. Москва, ул. Тверская, д. 10, офис 305' },
                 { icon: 'Phone', label: 'Телефон', value: '+7 (495) 123-45-67' },
-                { icon: 'Mail', label: 'Электронная почта', value: 'info@opora-fond.ru' },
+                { icon: 'Mail', label: 'Электронная почта', value: 'info@autocamping-union.ru' },
                 { icon: 'Clock', label: 'Часы работы', value: 'Пн–Пт, 09:00 – 18:00' },
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-5">
@@ -352,12 +353,12 @@ const Index = () => {
         <div className="container py-10 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="flex items-center justify-center w-9 h-9 border border-gold/50">
-              <span className="font-serif text-lg text-gold leading-none">О</span>
+              <Icon name="Tent" size={18} className="text-gold" />
             </div>
-            <p className="font-serif text-lg">Фонд «Опора»</p>
+            <p className="font-serif text-lg">Союз индустрии кемпингов и автотуризма</p>
           </div>
           <p className="text-white/40 text-sm text-center">
-            © 2026 Фонд «Опора». Некоммерческая организация. Все права защищены.
+            © 2026 Национальный союз профессионалов индустрии кемпингов и автотуризма. Все права защищены.
           </p>
         </div>
       </footer>
