@@ -71,7 +71,7 @@ const Index = () => {
               <Icon name="Tent" size={22} className="text-gold" />
             </div>
             <div className="leading-tight max-w-[260px]">
-              <p className="font-serif text-lg tracking-wide leading-tight">НСПИКА</p>
+              <p className="font-serif text-lg tracking-wide leading-tight">НСПКА</p>
               <p className="text-[11px] uppercase tracking-[0.2em] text-white/50">Нац. союз профессионалов индустрии кемпингов и автотуризма</p>
             </div>
           </button>
@@ -359,7 +359,7 @@ const Index = () => {
               <Icon name="Tent" size={18} className="text-gold" />
             </div>
             <div>
-              <p className="font-serif text-lg">НСПИКА</p>
+              <p className="font-serif text-lg">НСПКА</p>
               <p className="text-[11px] uppercase tracking-widest text-white/40">Нац. союз проф. индустрии кемпингов и автотуризма</p>
             </div>
           </div>
