@@ -16,12 +16,13 @@ const NAV = [
 ];
 
 const DOCUMENTS = [
-  { title: 'Устав Союза', desc: 'Редакция от 12 января 2024 г.', size: 'PDF · 1,4 МБ' },
-  { title: 'Свидетельство о регистрации', desc: 'Минюст России', size: 'PDF · 820 КБ' },
-  { title: 'Годовой отчёт за 2024 год', desc: 'Финансовая и содержательная отчётность', size: 'PDF · 3,1 МБ' },
-  { title: 'Стандарты классификации кемпингов', desc: 'Требования к объектам размещения', size: 'PDF · 2,2 МБ' },
-  { title: 'Положение о членстве в Союзе', desc: 'Порядок вступления и взносов', size: 'PDF · 690 КБ' },
-  { title: 'Политика обработки данных', desc: 'В соответствии с 152-ФЗ', size: 'PDF · 540 КБ' },
+  { title: 'Устав Союза', desc: 'Редакция от 12 января 2024 г.', size: 'PDF · 1,4 МБ', icon: 'FileText' },
+  { title: 'Свидетельство о регистрации', desc: 'Минюст России', size: 'PDF · 820 КБ', icon: 'FileText' },
+  { title: 'Годовой отчёт за 2024 год', desc: 'Финансовая и содержательная отчётность', size: 'PDF · 3,1 МБ', icon: 'FileText' },
+  { title: 'Стандарты классификации кемпингов', desc: 'Требования к объектам размещения', size: 'PDF · 2,2 МБ', icon: 'FileText' },
+  { title: 'Положение о членстве в Союзе', desc: 'Порядок вступления и взносов', size: 'PDF · 690 КБ', icon: 'FileText' },
+  { title: 'Политика обработки данных', desc: 'В соответствии с 152-ФЗ', size: 'PDF · 540 КБ', icon: 'FileText' },
+  { title: 'Реестр членов Союза', desc: 'Актуальный список членов НСПКА', size: 'PDF · 1,2 МБ', icon: 'Users' },
 ];
 
 const NEWS = [
@@ -226,7 +227,7 @@ const Index = () => {
               >
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center justify-center w-12 h-12 bg-navy text-gold">
-                    <Icon name="FileText" size={22} />
+                    <Icon name={d.icon} size={22} />
                   </div>
                   <Icon
                     name="Download"
